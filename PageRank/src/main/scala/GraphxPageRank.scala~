@@ -1,0 +1,63 @@
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+import org.apache.spark.SparkConf
+
+import org.apache.spark.graphx._
+import org.apache.spark.rdd.RDD
+
+//sample command 
+//./bin/spark-submit --class WordCount --master local[4] [pathToJar]/PageRank.jar [inputFile] [outputFIle]
+object PageRank {
+	def main(args: Array[String]) {
+		//check for arguement count
+		if(args.length < 2) {
+			//if less than return error statement
+			println("Invalid arguments count")		
+			return
+		}
+		//reading the path locations
+		var inPath : String = args(0)			
+		var outPath: String = args(1) 
+		val conf = new SparkConf().setAppName("PageRank")
+		val sc = new SparkContext(conf)
+		
+		val wiki: RDD[String] = sc.textFile(inPath).coalesce(20)
+		
+		case class Article(val title: String, val body: String)
+		// Parse the articles
+		val articles = wiki.map(_.split('\t')).
+		  // two filters on article format
+		  filter(line => (line.length > 1 && !(line(1) contains "REDIRECT"))).
+		  // store the results in an object for easier access
+		  map(line => new Article(line(0).trim, line(1).trim)).cache
+		
+		// Hash function to assign an Id to each article
+		def pageHash(title: String): VertexId = {
+		  title.toLowerCase.replace(" ", "").hashCode.toLong
+		}
+		// The vertices with id and article title:
+		val vertices = articles.map(a => (pageHash(a.title), a.title)).cache
+		val pattern = "\\[\\[.+?\\]\\]".r
+		val edges: RDD[Edge[Double]] = articles.flatMap { a =>
+		  val srcVid = pageHash(a.title)
+		  pattern.findAllIn(a.body).map { link =>
+		    val dstVid = pageHash(link.replace("[[", "").replace("]]", ""))
+		    Edge(srcVid, dstVid, 1.0)
+		  }
+		}
+
+		val graph = Graph(vertices, edges, "").subgraph(vpred = {(v, d) => d.nonEmpty}).cache
+		val prGraph = graph.staticPageRank(10).cache
+		val titleAndPrGraph = graph.outerJoinVertices(prGraph.vertices) {
+		  (v, title, rank) => (rank.getOrElse(0.0), title)
+		}
+
+		val test = titleAndPrGraph.vertices.top(100) {
+		  Ordering.by((entry: (VertexId, (Double, String))) => entry._2._1)
+		}
+		//.foreach(t => println(t._2._2 + ": " + t._2._1))
+
+
+		sc.makeRDD(test).saveAsTextFile(outPath)
+	}
+}

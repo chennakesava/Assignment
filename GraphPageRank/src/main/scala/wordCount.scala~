@@ -1,0 +1,105 @@
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+import org.apache.spark.SparkConf
+import scala.collection.mutable.ArrayBuffer
+
+//sample command 
+//./bin/spark-submit --class WordCount --master local[4] [pathToJar]/wordcount.jar [operation] [inputFile] [outputFIle] [patternFile if method is PatternCount]
+object WordCount {
+	def main(args: Array[String]) {
+		//check for arguement count
+		if(args.length < 3) {
+			//if less than return error statement
+			println("Invalid arguments count")		
+			return
+		}
+		//reading the path locations
+		var inPath : String = args(1)			
+		var outPath: String = args(2) 
+		//selecting operation
+		if(args(0).equals("WordCount")) {
+			wordCountRout(inPath,outPath)
+		} else if(args(0).equals("DoubleWordCount")) {
+			doubleWordCountRout(inPath,outPath)
+		} else if(args(0).equals("PatternCount")) {
+			//patternFilePath check
+			if(args.length != 4) {
+				println("Invalid parameters for patternMatching")		
+				return
+			}
+			val patternPath = args(3)
+			patternCountRout(inPath,outPath,patternPath)
+		} else {
+			//exit if invalid parameters are given
+			println("Invalid parameters")
+			return
+		}
+	}
+	
+	//method for basic Word count
+	def wordCountRout(inPath: String,outPath:String) {
+		//set conf and filepath
+		val conf = new SparkConf().setAppName("Word Count")
+		val sc = new SparkContext(conf)
+		val wordFile = sc.textFile(inPath)
+
+		//tokenize the line with using space
+		val wordLines = wordFile.flatMap(line => line.split(" "))
+		//map each word to count 1 and reduce the keys with final count	
+		val words = wordLines.map(word => (word,1))
+		val word_count = words.reduceByKey((word,count) => word + count)
+		//save the output to a file
+		word_count.saveAsTextFile(outPath+"WordCount")
+	}
+
+	//method for double Word count
+	def doubleWordCountRout(inPath: String,outPath:String) {
+		//set conf and filepath
+		val conf = new SparkConf().setAppName("Double Word Count")
+		val sc = new SparkContext(conf)
+		val wordFile = sc.textFile(inPath)
+		//pair the words using regex 
+		val pairs = wordFile.flatMap(line => splitWords(line)); 		
+		
+		//map each word to count 1 and reduce the keys with final count	
+		val word_count = pairs.map(w => (w, 1)).reduceByKey(_ + _)		
+		//save the output to a file
+		word_count.saveAsTextFile(outPath+"DoubleCount")
+	}
+
+	//method for pattern matching Word count
+	def patternCountRout(inPath: String,outPath:String,patternPath:String) {
+		//set conf and filepath
+		val conf = new SparkConf().setAppName("Pattern Word Count")
+		val sc = new SparkContext(conf)
+		val wordFile = sc.textFile(inPath)
+
+		//split words using space, then map each word to count 1 and reduce the keys with final count	
+		val wordLines = wordFile.flatMap(line => line.split(" "))
+		val words = wordLines.map(word => (word,1))
+		val word_count = words.reduceByKey((word,count) => word + count)
+		
+		//read pattern file and produce distinct words
+		val patternFile = sc.textFile(patternPath)
+		val patternWords = patternFile.flatMap(line => line.split(" ")).distinct()
+
+		//join the distinct words of pattern file to output of intial wordcount 
+		val patternCount = patternWords.map(word => (word,1)).join(word_count).map(word => (word._1,word._2._2))
+		//save the output to a file
+		patternCount.saveAsTextFile(outPath+"PatternCount")
+	}
+
+	// split words as pairs for a given string
+	def splitWords(line:String) : Seq[String] = {
+		val words = line.split(" ")
+		var prev : String = "";
+		var result : ArrayBuffer[String] = new ArrayBuffer[String]()
+		for(curr <- words){
+			if(!prev.equals(""))
+				result += (prev + " " + curr)
+			prev = curr
+		}
+		//
+		return result.toSeq
+	}
+}
