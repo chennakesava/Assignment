@@ -1,4 +1,4 @@
-name := "PageRank"
+name := "GraphxPageRank"
 
 version := "1.0"
 

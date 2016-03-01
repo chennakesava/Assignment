@@ -1,14 +1,15 @@
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
-
+import org.apache.spark.Logging
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
 import scala.xml.{XML,NodeSeq}
+import org.apache.spark.graphx.lib._
 
 //sample command 
-//./bin/spark-submit --class WordCount --master local[4] [pathToJar]/PageRank.jar [inputFile] [outputFIle]
-object PageRank {
+//./bin/spark-submit --class GraphxPageRank [pathToJar]/PageRank.jar [inputFile] [outputFIle] [itr]
+object GraphxPageRank extends Logging{
 	def main(args: Array[String]) {
 		//check for arguement count
 		if(args.length < 2) {
@@ -16,6 +17,8 @@ object PageRank {
 			println("Invalid arguments count")		
 			return
 		}
+		val start = System.currentTimeMillis
+
 		//reading the path locations
 		var inPath : String = args(0)			
 		var outPath: String = args(1) 
@@ -24,7 +27,7 @@ object PageRank {
 		val sc = new SparkContext(conf)
 		
 		val input: RDD[String] = sc.textFile(inPath)
-		
+		logWarning("Starting vertex generation");
 		var vertices = input.map(line => {
 		    val fields = line.split("\t")
 	    	val (title, body) = (fields(1), fields(3).replace("\\n", "\n"))
@@ -39,26 +42,19 @@ object PageRank {
 		              System.err.print()
 		            NodeSeq.Empty
 		          }
-		      	val outEdges = links.map(link => new String(link.text)).toArray
-		      	val id = new String(title)
-		      	(id,outEdges)
-	    })
-	    vertices = vertices.distinct.cache
-
+		    val outEdges = links.map(link => new String(link.text)).toArray
+		    val id = new String(title)
+		    (id,outEdges)
+	    }).cache
+	    
+	    logWarning("Completed vertex generation");
 		//mapping each src vertex with dest vertex
     	var tmp = vertices.flatMap(a => {a._2.map {t => (a._1,t)}})
-    	
-    	// tmp = tmp.distinct()
-    	//val links = tmp.distinct().groupByKey().cache()
 
-    	// Hash function to assign an Id to each article
-		def pageHash(title: String): VertexId = {
-		  title.replace(" ","").toLowerCase.hashCode.toLong
-		}
-
+    	// Hash function to assign an Id to each vertex
 		def myHashCode(s: String): Long = {
-		    var h: Long = 1125899906842597L  // prime
-		    // var h = 29
+			// prime
+		    var h: Long = 1125899906842597L  
 		    val len: Int = s.length
 		    var i = 0
 		    while (i < len) {
@@ -68,6 +64,7 @@ object PageRank {
 		    h
 		}
 
+		//create graphvertices from vertices
     	val gVertices = vertices.map( a => (myHashCode(a._1),a._1)).cache
     	val edges: RDD[Edge[Double]] = tmp.map { a =>
     		val srcVid = myHashCode(a._1)
@@ -75,55 +72,21 @@ object PageRank {
     		Edge(srcVid,dstVid,1.0)
     	}
 
+    	logWarning("Started graph generation");
     	val graph = Graph(gVertices, edges, "").subgraph(vpred = {(v, d) => d.nonEmpty}).cache
-		val prGraph = graph.staticPageRank(itrs).cache
+    	
+    	logWarning("Starting PageRank iterations");
+		val prGraph = graph.staticPageRank(itrs,.15).cache
 		val titleAndPrGraph = graph.outerJoinVertices(prGraph.vertices) {
 		  (v, title, rank) => (rank.getOrElse(0.0), title)
 		}
-
+		//format output by fetching the top 100 and by the order of rank.
 		val output = titleAndPrGraph.vertices.top(100) {
 		  Ordering.by((entry: (VertexId, (Double, String))) => entry._2._1)
-		}.map { t => (t._2._2,t._2._1)}//.foreach(t => println(t._2._2 + ": " + t._2._1))
+		}.map { t => (t._2._2,t._2._1)}
 
+		sc.makeRDD(output).coalesce(1,true).saveAsTextFile(outPath)
 
-		sc.makeRDD(output).saveAsTextFile(outPath)
-
-
-
-
-		// /************ graph algo starts here ************/
-		// case class Article(val title: String, val body: String)
-		// // Parse the articles
-		// val articles = wiki.map(_.split('\t')).
-		//   // two filters on article format
-		//   filter(line => (line.length > 1 && !(line(3) contains "REDIRECT"))).
-		//   // store the results in an object for easier access
-		//   map(line => new Article(line(1).trim, line(3).trim)).cache
-		
-		
-		// The vertices with id and article title:
-		// val vertices = articles.map(a => (pageHash(a.title), a.title)).cache
-		// val pattern = "\\[\\[.+?\\]\\]".r
-		// val edges: RDD[Edge[Double]] = articles.flatMap { a =>
-		//   val srcVid = pageHash(a.title)
-		//   pattern.findAllIn(a.body).map { link =>
-		//     val dstVid = pageHash(link.replace("[[", "").replace("]]", ""))
-		//     Edge(srcVid, dstVid, 1.0)
-		//   }
-		// }
-
-		// val graph = Graph(vertices, edges, "").subgraph(vpred = {(v, d) => d.nonEmpty}).cache
-		// val prGraph = graph.staticPageRank(itrs).cache
-		// val titleAndPrGraph = graph.outerJoinVertices(prGraph.vertices) {
-		//   (v, title, rank) => (rank.getOrElse(0.0), title)
-		// }
-
-		// val test = titleAndPrGraph.vertices.top(100) {
-		//   Ordering.by((entry: (VertexId, (Double, String))) => entry._2._1)
-		// }
-		// //.foreach(t => println(t._2._2 + ": " + t._2._1))
-
-
-		// sc.makeRDD(test).saveAsTextFile(outPath)
+		logWarning("Graphx pagerank took time: " + (System.currentTimeMillis - start)/1000.0+" sec.")
 	}
 }

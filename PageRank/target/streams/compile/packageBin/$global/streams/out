@@ -1,1 +1,35 @@
-[0m[[0mdebug[0m] [0mJar uptodate: /home/mani/PageRank/target/scala-2.10/pagerank_2.10-1.0.jar[0m
+[0m[[0minfo[0m] [0mPackaging /home/mani/Assignment/PageRank/target/scala-2.10/purepagerank_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$2.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$3.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$3.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$5.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$5.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$4.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$4.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$1$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$6.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$6.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank.class[0m
+[0m[[0mdebug[0m] [0m	PurePageRank$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

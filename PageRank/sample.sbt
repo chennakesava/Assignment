@@ -1,4 +1,4 @@
-name := "PageRank"
+name := "PurePageRank"
 
 version := "1.0"
 

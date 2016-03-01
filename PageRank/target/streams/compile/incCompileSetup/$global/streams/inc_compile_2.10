@@ -4,7 +4,7 @@ output mode:
 0 -> single
 output directories:
 1 items
-output dir -> /home/mani/PageRank/target/scala-2.10/classes
+output dir -> /home/mani/Assignment/PageRank/target/scala-2.10/classes
 compile options:
 0 items
 javac options:
@@ -19,23 +19,28 @@ name hashing:
 1 items
 0 -> true
 products:
-11 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$1$$anonfun$2.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$1.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$3.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$5.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$4.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$.class
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/PageRank/target/scala-2.10/classes/SparkPageRank.class
+16 items
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$1$$anonfun$2.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$1.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$3.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$5.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$4.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$2.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$3.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$4.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$5.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$6.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$.class
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank.class
 binary dependencies:
 3 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /home/mani/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /home/mani/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -53,140 +58,154 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-11 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$1
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$1$$anonfun$2
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$3
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$5
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$main$1
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$main$1$$anonfun$4
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2
+16 items
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$1
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$1$$anonfun$2
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$3
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$5
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$1
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$1$$anonfun$4
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$2
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$3
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$4
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$5
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank$$anonfun$main$6
 used names:
-104 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> *
-/home/mani/PageRank/src/main/scala/PageRank.scala -> +
-/home/mani/PageRank/src/main/scala/PageRank.scala -> /
-/home/mani/PageRank/src/main/scala/PageRank.scala -> <
-/home/mani/PageRank/src/main/scala/PageRank.scala -> <init>
-/home/mani/PageRank/src/main/scala/PageRank.scala -> ==
-/home/mani/PageRank/src/main/scala/PageRank.scala -> >
-/home/mani/PageRank/src/main/scala/PageRank.scala -> AnyRef
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Array
-/home/mani/PageRank/src/main/scala/PageRank.scala -> ClassTag
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Double
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Empty
-/home/mani/PageRank/src/main/scala/PageRank.scala -> NodeSeq
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Ordering
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Predef
-/home/mani/PageRank/src/main/scala/PageRank.scala -> RDD
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SAXParseException
-/home/mani/PageRank/src/main/scala/PageRank.scala -> ScalaRunTime
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Seq
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkConf
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkContext
-/home/mani/PageRank/src/main/scala/PageRank.scala -> SparkPageRank
-/home/mani/PageRank/src/main/scala/PageRank.scala -> String
-/home/mani/PageRank/src/main/scala/PageRank.scala -> System
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Tuple2
-/home/mani/PageRank/src/main/scala/PageRank.scala -> Unit
-/home/mani/PageRank/src/main/scala/PageRank.scala -> XML
-/home/mani/PageRank/src/main/scala/PageRank.scala -> \
-/home/mani/PageRank/src/main/scala/PageRank.scala -> \\
-/home/mani/PageRank/src/main/scala/PageRank.scala -> _1
-/home/mani/PageRank/src/main/scala/PageRank.scala -> _2
-/home/mani/PageRank/src/main/scala/PageRank.scala -> apache
-/home/mani/PageRank/src/main/scala/PageRank.scala -> apply
-/home/mani/PageRank/src/main/scala/PageRank.scala -> args
-/home/mani/PageRank/src/main/scala/PageRank.scala -> arrayClass
-/home/mani/PageRank/src/main/scala/PageRank.scala -> augmentString
-/home/mani/PageRank/src/main/scala/PageRank.scala -> body
-/home/mani/PageRank/src/main/scala/PageRank.scala -> by
-/home/mani/PageRank/src/main/scala/PageRank.scala -> cache
-/home/mani/PageRank/src/main/scala/PageRank.scala -> canBuildFrom
-/home/mani/PageRank/src/main/scala/PageRank.scala -> contribs
-/home/mani/PageRank/src/main/scala/PageRank.scala -> ctx
-/home/mani/PageRank/src/main/scala/PageRank.scala -> distinct
-/home/mani/PageRank/src/main/scala/PageRank.scala -> entry
-/home/mani/PageRank/src/main/scala/PageRank.scala -> err
-/home/mani/PageRank/src/main/scala/PageRank.scala -> exit
-/home/mani/PageRank/src/main/scala/PageRank.scala -> fields
-/home/mani/PageRank/src/main/scala/PageRank.scala -> flatMap
-/home/mani/PageRank/src/main/scala/PageRank.scala -> foreach
-/home/mani/PageRank/src/main/scala/PageRank.scala -> id
-/home/mani/PageRank/src/main/scala/PageRank.scala -> immutable
-/home/mani/PageRank/src/main/scala/PageRank.scala -> input
-/home/mani/PageRank/src/main/scala/PageRank.scala -> intWrapper
-/home/mani/PageRank/src/main/scala/PageRank.scala -> iters
-/home/mani/PageRank/src/main/scala/PageRank.scala -> java
-/home/mani/PageRank/src/main/scala/PageRank.scala -> join
-/home/mani/PageRank/src/main/scala/PageRank.scala -> lang
-/home/mani/PageRank/src/main/scala/PageRank.scala -> length
-/home/mani/PageRank/src/main/scala/PageRank.scala -> line
-/home/mani/PageRank/src/main/scala/PageRank.scala -> link
-/home/mani/PageRank/src/main/scala/PageRank.scala -> links
-/home/mani/PageRank/src/main/scala/PageRank.scala -> loadString
-/home/mani/PageRank/src/main/scala/PageRank.scala -> makeRDD
-/home/mani/PageRank/src/main/scala/PageRank.scala -> map
-/home/mani/PageRank/src/main/scala/PageRank.scala -> mapValues
-/home/mani/PageRank/src/main/scala/PageRank.scala -> materializeClassTag
-/home/mani/PageRank/src/main/scala/PageRank.scala -> math
-/home/mani/PageRank/src/main/scala/PageRank.scala -> ne
-/home/mani/PageRank/src/main/scala/PageRank.scala -> org
-/home/mani/PageRank/src/main/scala/PageRank.scala -> outEdges
-/home/mani/PageRank/src/main/scala/PageRank.scala -> package
-/home/mani/PageRank/src/main/scala/PageRank.scala -> print
-/home/mani/PageRank/src/main/scala/PageRank.scala -> println
-/home/mani/PageRank/src/main/scala/PageRank.scala -> rank
-/home/mani/PageRank/src/main/scala/PageRank.scala -> ranks
-/home/mani/PageRank/src/main/scala/PageRank.scala -> rdd
-/home/mani/PageRank/src/main/scala/PageRank.scala -> rddToPairRDDFunctions
-/home/mani/PageRank/src/main/scala/PageRank.scala -> reduceByKey
-/home/mani/PageRank/src/main/scala/PageRank.scala -> refArrayOps
-/home/mani/PageRank/src/main/scala/PageRank.scala -> replace
-/home/mani/PageRank/src/main/scala/PageRank.scala -> result
-/home/mani/PageRank/src/main/scala/PageRank.scala -> saveAsTextFile
-/home/mani/PageRank/src/main/scala/PageRank.scala -> sax
-/home/mani/PageRank/src/main/scala/PageRank.scala -> scala
-/home/mani/PageRank/src/main/scala/PageRank.scala -> setAppName
-/home/mani/PageRank/src/main/scala/PageRank.scala -> size
-/home/mani/PageRank/src/main/scala/PageRank.scala -> spark
-/home/mani/PageRank/src/main/scala/PageRank.scala -> sparkConf
-/home/mani/PageRank/src/main/scala/PageRank.scala -> split
-/home/mani/PageRank/src/main/scala/PageRank.scala -> stop
-/home/mani/PageRank/src/main/scala/PageRank.scala -> text
-/home/mani/PageRank/src/main/scala/PageRank.scala -> textFile
-/home/mani/PageRank/src/main/scala/PageRank.scala -> title
-/home/mani/PageRank/src/main/scala/PageRank.scala -> to
-/home/mani/PageRank/src/main/scala/PageRank.scala -> toArray
-/home/mani/PageRank/src/main/scala/PageRank.scala -> toInt
-/home/mani/PageRank/src/main/scala/PageRank.scala -> top
-/home/mani/PageRank/src/main/scala/PageRank.scala -> unchecked
-/home/mani/PageRank/src/main/scala/PageRank.scala -> url
-/home/mani/PageRank/src/main/scala/PageRank.scala -> urls
-/home/mani/PageRank/src/main/scala/PageRank.scala -> values
-/home/mani/PageRank/src/main/scala/PageRank.scala -> vertices
-/home/mani/PageRank/src/main/scala/PageRank.scala -> wrapRefArray
-/home/mani/PageRank/src/main/scala/PageRank.scala -> xml
+108 items
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> *
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> +
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> -
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> /
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> <
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> <init>
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> ==
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> >
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Array
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> ClassTag
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Double
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Empty
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Logging
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> NodeSeq
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Ordering
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Predef
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> PurePageRank
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> RDD
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> SAXParseException
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> ScalaRunTime
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Seq
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> SparkConf
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> SparkContext
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> String
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> System
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Tuple2
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> Unit
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> XML
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> \
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> \\
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> _1
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> _2
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> apache
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> apply
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> args
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> arrayClass
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> augmentString
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> body
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> by
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> cache
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> canBuildFrom
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> coalesce
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> context
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> contribs
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> currentTimeMillis
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> entry
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> err
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> exit
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> fields
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> flatMap
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> foreach
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> immutable
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> intWrapper
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> iters
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> java
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> join
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> lang
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> length
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> line
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> link
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> links
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> loadString
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> logWarning
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> makeRDD
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> map
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> mapValues
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> materializeClassTag
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> math
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> ne
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> org
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> outEdges
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> package
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> print
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> println
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> rank
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> ranks
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> rdd
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> rddToPairRDDFunctions
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> reduceByKey
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> refArrayOps
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> replace
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> result
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> saveAsTextFile
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> sax
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> scala
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> setAppName
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> size
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> spark
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> sparkConfig
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> split
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> srcTitle
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> start
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> stop
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> text
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> textFile
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> title
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> to
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> toArray
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> toInt
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> top
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> unchecked
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> url
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> urls
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> values
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> vertices
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> wikiData
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> wrapRefArray
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> xml
 product stamps:
-11 items
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$1$$anonfun$2.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$1.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$3.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$5.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$4.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$$anonfun$main$1.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank$.class -> lastModified(1456608504000)
-/home/mani/PageRank/target/scala-2.10/classes/SparkPageRank.class -> lastModified(1456608504000)
+16 items
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$1$$anonfun$2.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$1.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$3.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$5.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$4$$anonfun$apply$1.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$4.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1$$anonfun$apply$mcVI$sp$2.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$1.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$2.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$3.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$4.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$5.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$$anonfun$main$6.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank$.class -> lastModified(1456793943000)
+/home/mani/Assignment/PageRank/target/scala-2.10/classes/PurePageRank.class -> lastModified(1456793943000)
 source stamps:
 1 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> hash(7bd26ea441540b8ba740742b95f6248c463787e0)
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> hash(56011f0e808da872bc0d3b44946dc48c96f93042)
 binary stamps:
 3 items
 /home/mani/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar -> lastModified(1451473058000)
@@ -194,24 +213,19 @@ binary stamps:
 /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> lastModified(1455295204000)
 class names:
 3 items
-/home/mani/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar -> org.apache.spark.SparkContext$
-/home/mani/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar -> scala.Unit
+/home/mani/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar -> org.apache.spark.Logging
+/home/mani/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar -> scala.collection.immutable.Range
 /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 1 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBUPPReAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAFXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cDmlmid0AAZub3RpZnlzcQB+AAyMzqFhdAAEd2FpdHNxAH4ADIO//Jx0AA0kYXNJbnN0YW5jZU9mc3EAfgAMA/eqEHQABmVxdWFsc3NxAH4ADIHjf0V0AAxhc0luc3RhbmNlT2ZzcQB+AAxjd43XdAAMc3luY2hyb25pemVkc3EAfgAMew10DHQADSRpc0luc3RhbmNlT2ZzcQB+AAx8EihddAAEbWFpbnNxAH4ADNmKlsV0AA1TcGFya1BhZ2VSYW5rc3EAfgAMg3HySXQACW5vdGlmeUFsbHNxAH4ADMA9Fz10AAxpc0luc3RhbmNlT2ZzcQB+AAwZFRJUdAACPT1zcQB+AAxSd9FvdAAFY2xvbmVzcQB+AAxiGUn6dAAIdG9TdHJpbmdzcQB+AAyu4MCadAACIT1zcQB+AAzJYdyEdAAIZ2V0Q2xhc3NzcQB+AAzvqKomdAACbmVzcQB+AAy5ywL0dAACZXFzcQB+AAzRlyBndAACIyNzcQB+AAyd3f+GdAAIZmluYWxpemVzcQB+AAw7MrmwdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBBeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAcQB+AB91cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AFgBc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEFMAAlpbmhlcml0ZWRxAH4AQUwAB3BhcmVudHNxAH4AQXhxAH4AX3NxAH4AWAF1cQB+ADwAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AEJxAH4AS3VxAH4ATAAAAABzcQB+AE4AcQB+AB11cQB+AFAAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AXnQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF5zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHp1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgBneHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBTdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBuWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBec3EAfgBtdAAFQXJyYXlxAH4Ac3VyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBtdAAGU3RyaW5nc3EAfgBxc3EAfgB0dXEAfgB3AAAAA3NxAH4AeXQABGphdmFzcQB+AHl0AARsYW5ncQB+AH5wc3EAfgBYAXVxAH4APAAAAABwc3EAfgBYAXVxAH4AkgAAAAJzcQB+AG10AAZPYmplY3RxAH4AlnNxAH4AbXQAA0FueXEAfgBzcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUyShxc11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAAtL2hvbWUvbWFuaS9QYWdlUmFuay90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUe9JupEFUC4unQHQrlfYkjEY3h+A=
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC/R1GpAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAIHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cBpFSQ10AAZub3RpZnlzcQB+AAw+qyvpdAAEd2FpdHNxAH4ADOhmWuJ0AA0kYXNJbnN0YW5jZU9mc3EAfgAMOtUjjXQADFB1cmVQYWdlUmFua3NxAH4ADC6jtPt0AAZlcXVhbHNzcQB+AAxFHv88dAAMYXNJbnN0YW5jZU9mc3EAfgAM1vmpRHQABGxvZ19zcQB+AAz1w1lzdAAMc3luY2hyb25pemVkc3EAfgAMWxu5jXQADSRpc0luc3RhbmNlT2ZzcQB+AAywKfU+dAAIbG9nVHJhY2VzcQB+AAzkE+VXdAAOaXNUcmFjZUVuYWJsZWRzcQB+AAzOb0IWdAAEbWFpbnNxAH4ADPsxi9J0AAdsb2dOYW1lc3EAfgAMH5cIDHQACW5vdGlmeUFsbHNxAH4ADLQcp190AAxpc0luc3RhbmNlT2ZzcQB+AAwwouu+dAACPT1zcQB+AAwF6g4GdAAFY2xvbmVzcQB+AAzAlGTKdAAIdG9TdHJpbmdzcQB+AAzPLs9odAAIbG9nRXJyb3JzcQB+AAxuMVo2dAACIT1zcQB+AAw+bhAydAAIZ2V0Q2xhc3NzcQB+AAw63r+JdAAKbG9nV2FybmluZ3NxAH4ADOWsd1h0ABVpbml0aWFsaXplSWZOZWNlc3NhcnlzcQB+AAwO5PQcdAACbmVzcQB+AAzB669RdAACZXFzcQB+AAyzYqt1dAADbG9nc3EAfgAMJB+s/XQAAiMjc3EAfgAMKuQnPXQACGZpbmFsaXplc3EAfgAMxFTYEnQACGhhc2hDb2Rlc3EAfgAM/co1q3QACGxvZ0RlYnVnc3EAfgAMVBMBGnQAB2xvZ0luZm9zcQB+AAz3l1dbdAARaW5pdGlhbGl6ZUxvZ2dpbmdzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBXeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAcQB+ABV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgBveHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBuAHBzcQB+AHNzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AV0wACWluaGVyaXRlZHEAfgBXTAAHcGFyZW50c3EAfgBXeHEAfgB3c3EAfgBuAHBzcQB+AHN1cQB+AFIAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AFhxAH4AYXVxAH4AYgAAAABzcQB+AGQAcQB+ACV1cQB+AGYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AdnQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AHZzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJR1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgCBeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBpdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgCIWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgB2c3EAfgCHdAAFQXJyYXlxAH4AjXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgCHdAAGU3RyaW5nc3EAfgCLc3EAfgCOdXEAfgCRAAAAA3NxAH4Ak3QABGphdmFzcQB+AJN0AARsYW5ncQB+AJhzcQB+AG4AcHNxAH4Ac3VxAH4AUgAAAABzcQB+AG4AcHNxAH4Ac3VxAH4ArAAAAANzcQB+AId0AAdMb2dnaW5nc3EAfgCLc3EAfgCOdXEAfgCRAAAABHNxAH4Ak3QAA29yZ3NxAH4Ak3QABmFwYWNoZXNxAH4Ak3QABXNwYXJrcQB+AJhzcQB+AId0AAZPYmplY3RxAH4AsHNxAH4Ah3QAA0FueXEAfgCNdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVMvr1kQdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAOC9ob21lL21hbmkvQXNzaWdubWVudC9QYWdlUmFuay90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUVgEfDoCNqHK8DTtElG3EjJb5MEI=
 external apis:
 0 items
 source infos:
 1 items
-/home/mani/PageRank/src/main/scala/PageRank.scala -> 
+/home/mani/Assignment/PageRank/src/main/scala/PageRank.scala -> 
 AAAAAAAAAAA=
 compilations:
-6 items
-0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUxFxnxh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALS9ob21lL21hbmkvUGFnZVJhbmsvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
-1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUxGBAep1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALS9ob21lL21hbmkvUGFnZVJhbmsvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
-2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUyKyGlV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALS9ob21lL21hbmkvUGFnZVJhbmsvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
-3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUyKzhNt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALS9ob21lL21hbmkvUGFnZVJhbmsvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
-4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUyK3M+d1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALS9ob21lL21hbmkvUGFnZVJhbmsvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
-5 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUyShxc11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALS9ob21lL21hbmkvUGFnZVJhbmsvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUy+vWRB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOC9ob21lL21hbmkvQXNzaWdubWVudC9QYWdlUmFuay90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
